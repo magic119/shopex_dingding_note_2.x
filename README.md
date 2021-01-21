@@ -4,7 +4,7 @@
 安装方式
     
     一、
-        1、git clone https://github.com/magic119/shopex-dingding-notify-2.x.git
+        1、git clone https://github.com/magic119/shopex_dingding_note_2.x.git
 
         2、切换到文件夹下，找到setup.py，在终端执行 python setup.py install 会自动将项目安装到第三方库中
         在执行命令之前，选择好对应的python版本，2.7.x
