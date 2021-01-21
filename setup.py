@@ -7,8 +7,8 @@ sys.setdefaultencoding('utf-8')
 from setuptools import setup, find_packages
 
 setup(
-    name="shopex-dingding-notify-2.x",
-    version=1.0,
+    name="shopex_dingding_note_2.x",
+    version=1.1,
     description="ShopEx dingding notify for python",
     long_description_content_type=open("README.md").read(),
     packages=find_packages(),
