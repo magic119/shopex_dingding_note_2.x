@@ -13,7 +13,7 @@
         pip install -i https://pypi.org/simple/ shopex_dingding_note_2.x
 
 使用方式
-    
+    测试案列demo在test中
     注意！
     创建客户端时，已经启动发送消息的线程，会在控制台打印出可能产生的异常。发送消息时，请传入正确格式的字典数据
     {"time": 事件产生时间, "main": "事件产生主体", "service": "所属服务", "message": 消息内容}
@@ -28,7 +28,4 @@
     api_url = "xxx"
 
     client = NoticeClient(app_key=app_key, app_secret=app_secret, api_url=api_url)
-    
-    # 第一个参数是一个列表，表示要发送给谁
-    # 第二个参数也是一个列表， 表示mq消息队列
-    client.send(["s4261"], ["dingding"])
+    client.send({"message": "测试数据"}, ["s4261"])
