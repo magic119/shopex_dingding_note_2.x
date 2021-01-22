@@ -9,7 +9,7 @@ import threading
 import json
 
 from conf.config import RETRY_COUNT, TIME_STEP
-from lib.log import *
+from inner_lib.log import *
 
 
 def get_md5(string):

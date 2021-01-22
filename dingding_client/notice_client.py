@@ -5,7 +5,7 @@ import threading
 from gevent.queue import JoinableQueue
 
 
-from lib.func_ext import get_md5, http_request, message_format, singleton
+from inner_lib.func_ext import get_md5, http_request, message_format, singleton
 from conf.config import MAXSIZE
 
 
