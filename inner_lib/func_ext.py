@@ -71,7 +71,7 @@ def singleton(cls):
         # 双重检查锁定创建单例
         if not _instance.get(cls.__name__):
             with _instance_lock:
-                if not _instance.get(cls):
+                if not _instance.get(cls.__name__):
                     _instance[cls.__name__] = cls(*args, **kwargs)
                     return _instance[cls.__name__]
         else:
